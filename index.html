@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapping</title>
+    <style>
+        .swap{
+            display: flex;
+        }
+        .st{
+               margin-left : 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="swap">
+    <div class="st">
+    <h1>Before Swapping</h1>
+    <p style="text-size-adjust: 20px;">value of a :
+        <span id="1st"></span>
+    </p>
+    <p>value of b :
+        <span id="2st"></span>
+    </p>
+</div>
+    <div class="st">
+    <h1>After swapping</h1>
+    <p>value of a:
+        <span id="3st"></span>
+    </p>
+    <p>value of b :
+        <span id="4st"></span>
+    </p>
+</div>
+</div>
+    <script>
+        let a = prompt('Enter the first variable: ');
+let b = prompt('Enter the second variable: ');
+document.getElementById("1st").innerHTML=a;
+document.getElementById("2st").innerHTML=b;
+
+
+let temp;
+
+temp = a;
+a = b;
+b = temp;
+
+document.getElementById("3st").innerHTML=a;
+document.getElementById("4st").innerHTML=b;
+console.log(`The value of a after swapping: ${a}`);
+console.log(`The value of b after swapping: ${b}`);
+    </script>
+</body>
+</html>
